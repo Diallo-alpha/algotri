@@ -1,0 +1,14 @@
+PROCEDURE tri_insertion(int tab[],int taille)
+VAR
+    temp:integer;
+BEGIN
+    FOR int i=1;i<taille;i++ DO
+        int temp = tab[i],j=i;
+		while(j>0 && tab[j-1]>temp) 
+        tab[j] = tab[j-1];
+			j--;
+            tab[j]=temp;
+            END_while
+    END_FOR
+            
+END
